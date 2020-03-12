@@ -1,6 +1,12 @@
 package com.eliasnorrby.springdemo;
 
 public class HockeyCoach implements  Coach{
+  private FortuneService fortuneService;
+
+  public HockeyCoach(FortuneService fortuneService) {
+    this.fortuneService = fortuneService;
+  }
+
   @Override
   public String getDailyWorkout() {
     return "Skate some laps";
@@ -8,6 +14,6 @@ public class HockeyCoach implements  Coach{
 
   @Override
   public String getDailyFortune() {
-    return null;
+    return fortuneService.getFortune();
   }
 }
