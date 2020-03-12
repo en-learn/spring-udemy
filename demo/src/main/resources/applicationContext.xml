@@ -17,6 +17,8 @@
   <bean id="myCricketCoach"
         class="com.eliasnorrby.springdemo.CricketCoach">
     <property name="fortuneService" ref="myFortuneService"/>
+    <property name="emailAddress" value="thebestcoach@example.com"/>
+    <property name="team" value="Sunrise Shenanigans"/>
   </bean>
 </beans>
 
