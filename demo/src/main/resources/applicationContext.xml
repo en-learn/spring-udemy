@@ -5,13 +5,18 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
   <!-- Define your beans here -->
-  <bean id="myFortune"
+  <bean id="myFortuneService"
         class="com.eliasnorrby.springdemo.HappyFortuneService">
   </bean>
 
   <bean id="myCoach"
         class="com.eliasnorrby.springdemo.TrackCoach">
-    <constructor-arg ref="myFortune" />
+    <constructor-arg ref="myFortuneService"/>
+  </bean>
+
+  <bean id="myCricketCoach"
+        class="com.eliasnorrby.springdemo.CricketCoach">
+    <property name="fortuneService" ref="myFortuneService"/>
   </bean>
 </beans>
 
