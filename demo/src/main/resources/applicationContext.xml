@@ -10,7 +10,7 @@
   </bean>
 
   <bean id="myCoach"
-        class="com.eliasnorrby.springdemo.HockeyCoach">
+        class="com.eliasnorrby.springdemo.TrackCoach">
     <constructor-arg ref="myFortune" />
   </bean>
 </beans>
