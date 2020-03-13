@@ -1,4 +1,4 @@
-package com.eliasnorrby;
+package com.eliasnorrby.springdemo;
 
 public class App {
   public static void main(String[] args) {
